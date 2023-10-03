@@ -1,0 +1,41 @@
+.box{
+    
+        padding: 10px;
+        border-radius: 1em;
+        height: 300px;
+        width: 220px;
+        margin: auto;
+        background-color: #191b28;
+       
+}
+.eqqual{
+    background-color: rgb(243, 77, 104);
+    height: 30px;
+    width: 35px;
+}
+.screen{
+    
+    height:35px;
+    width: 190px;
+    background-color: rgb(218, 211, 199);
+    border-radius: 5px;
+    color: black;
+  
+}
+.operator{
+    height: 30px;
+    width: 35px;
+    background-color: #724494;
+
+}
+.equal{
+    background-color: rgb(243, 77, 104);
+}
+.operator :hover {
+    cursor: pointer;
+    
+}
+.equal{
+    height: 55px;
+    width: 32px;
+}
