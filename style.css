@@ -1,45 +1,99 @@
-
-.box{
-   
-        padding: 10px;
-        border-radius: 1em;
-        height: 500px;
-        width: 350px;
-        margin: auto;
-        background-color: #191b28;
-       
-}
-.eqqual{
-    background-color: rgb(242, 84, 111);
-    height: 60px;
-    width: 60px;
-    border-radius: 5px;
-}
-.screen{
-    
-    height:55px;
-    width: 280px;
-    background-color: rgb(241, 174, 151);
-    border-radius: 5px;
-    color: black;
-  
-}
-.operator{
-    border-radius: 5px;
-    height: 60px;
-    width: 60px;
-    background-color: #724494;
-
-}
-.equal{
-    background-color: rgb(243, 77, 104);
-    height: 90px;
-    width: 60px;
-    border-radius: 6px;
-    
-}
-.operator :hover {
-    cursor: pointer;
-    
+body {
+  background-color: rgb(40, 44, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+.calculator {
+  width: 340px;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  text-align: center;
+}
+
+.screen {
+  width: 90%;
+  margin-right: 2px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: right;
+  padding: 15px;
+  color: #f5f5f5;
+  background-color: #3b3b3b;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.eqqual,
+.operator {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 26px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.eqqual {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.eqqual:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.operator {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.operator:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    width: 90%; 
+    padding: 15px;
+  }
+
+  .screen {
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .eqqual,
+  .operator {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+}
